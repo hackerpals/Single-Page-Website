@@ -1,84 +1,122 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body{
     margin: 0px;
     width: 100%;
 }
 
+
+
 h1,h2,h3,h4,h5,p{
     font-family: 'Nunito', sans-serif;
+    margin: 0px;
 }
-
-.center{
-    margin: 0 auto; 
-    align-self: center;
-}
-
 
 header{
-    padding-left:30px; 
-    padding-right: 30px;
-    margin-top: 15px;
+    background: #2DC7FF;
+    padding: 15px; 
+    color: #fff;
     display: flex;
+    justify-content: space-between;
 }
 
-header h2{
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-    font-size: 2em;
-}
-.posLeft{
-    align-self: flex-start;
- 
+.logo{
+    font-size: 1.3em;
 }
 
-.posRight{
-    align-content: flex-end;
-    justify-self: flex-end;
+header .social{
+    align-self: center;
 }
 
-.social{
-    color: #fff;
+header li{
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.social li{
-    padding:0 10px 0 10px; 
-    font-size: 1.5em;
+header .fa{
+    font-size: 1.4em;
+    align-self: center;
 }
-
-li{
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-}
-
-
 
 .hero{
-    height: 700px;
-    width: 100%;
-    background-color:#2DC7FF;
-    margin-top: -105px; 
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 500px;
+    background: #2DC7FF;
+    text-align: center;
 }
 
-.hero h1{
-    font-size: 4em; 
+.hero{
+    font-size: 3em;
     color: #fff;
+}
+
+
+.about{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40xp ;
+    padding-bottom: 40px; 
+}
+
+.about .aboutHeader{
+    flex: 1;
     text-align: center;
-    align-self: center;
+    padding:30px;
+    
+}
+img{
+    border-radius: 50%;
+    width: 200px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left{
     flex: 1;
 }
+.left img{
+    margin: 0 25%;
+}
 
-.aboutMe{
+.right{
+    flex: 2;
+    align-self: center;
+}
+
+.right p{
+    width: 75%;
+}
+
+.work{
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 400px;
+    text-align: center;
+    padding: 30px 
+}
+
+.work h2{
+    flex: 1;
+    text-align: center;
+    padding:30px;
+}
+
+.contact{
     display: flex;
-    padding: 50px 0px 0px 0px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.aboutMe img{
-    width:200px;
-    border-radius: 100%; 
-}
 
 footer{
     background-color: #000;
@@ -89,6 +127,9 @@ footer{
     align-items: center;
 }
 
+footer p{
+    padding-top: 20px;
+    padding-bottom: 20px;}
 
 footer span{
     color: red;
