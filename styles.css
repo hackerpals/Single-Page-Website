@@ -112,11 +112,27 @@ img{
 }
 
 .contact{
+    height: 400px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
 }
 
+.contact h2{
+    text-align: center;
+    padding: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+input, textarea{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
 
 footer{
     background-color: #000;
